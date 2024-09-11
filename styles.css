@@ -1,0 +1,465 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background: linear-gradient(rgb(112, 212, 212),rgb(212, 212, 205),rgb(112, 212, 212));
+    
+}
+
+#titulo{
+    font-size: 42px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    transition: 1.5s ease;
+    margin-top: 20px;
+}
+
+#titulo:hover, #formacion:hover, #ver:hover{
+    transform: scale(1.1);
+    color: rgba(238, 211, 55);
+    transition: 1.5s ease;
+}
+
+h2{
+    color: white;
+    font-size: 36px;
+}
+
+#formacion{
+    position: relative;
+    top: 50px;
+    transition: 1.5s ease;
+    width: 30%;
+    margin: auto;
+}
+
+#logo{
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+
+.suplentes img{
+    width: 14em;
+    height: 14em;
+}
+img{
+    width: 15em;
+    height: 15rem;
+}
+
+#contenedor{
+    width: 1700px;
+    border: 15px solid blue;
+    margin: auto;
+    background-color: black;
+    z-index: -1;
+    text-align: center;
+}
+
+
+
+#encabezado{
+    margin: auto;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Opcional, alinea las imágenes verticalmente */
+}
+
+#pancho{
+    width: 8em;
+    height: 8em;
+    border-radius: 300px;
+}
+
+#pancho:hover{
+    width: 18em;
+    height: 18em;
+    transition: 1s ease all;
+    filter: blur(1px);
+}
+
+.infoPancho{
+    width: 200px;
+    position: absolute;
+    transform: translate(645px,-70px);
+    color: rgb(0, 0, 0);
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 16px;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.5s ease;
+    z-index: 2; /* Asegura que el párrafo esté por encima de la imagen */
+}
+
+#pancho:hover + .infoPancho{
+    transition: 1s ease;
+    box-shadow: 0 0 15px yellow;
+    background-color: rgba(255,255,255,0.3);
+    /*border: 2px dotted red;*/
+    opacity: 1;
+    width: 200px;
+    margin: 10px auto;
+    border: 3px double rgba(223, 223, 72);
+}
+
+
+
+#centro{
+    background-image: url("img/canchajpg.jpg") ;
+    margin: auto;
+    height: 1700px;
+    width: 90%;
+    border:5px solid red;
+    background-repeat: no-repeat;
+    text-align: center;
+    }
+
+.titulares{
+    padding-left: 7px;
+    width: 1190px;
+    height: 1700px;
+    float: left;
+}
+#ver{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    line-height: 60px;
+    color: white;
+    transition: 1.5s ease;
+}
+
+
+
+.barra .suplentes {
+    width: 330px;
+    float: right;
+    margin: auto;
+    transform: translateY(-10px); /* Opcional: para un efecto de deslizamiento */
+    transition: opacity 1.5s ease, transform 1.5s ease; /* Transiciones suaves */
+
+}
+
+
+.mostrar-suplentes{
+    height: 60px;
+    width: 330px ;
+    float: right;
+    
+}
+
+.botones{
+    /*border: 3px solid red;*/
+    margin-top: -80px;
+    margin-bottom: 30px;
+    border-bottom:1px solid rgba(70, 67, 67) ;
+    width: 80%;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+button{
+    width: 200px;
+    height: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: rgba(255,255,255, 0.2);
+    color: rgba(255,255,255);
+}
+
+button:hover{
+    scale: 1.1;
+    transition:  1s all;
+}
+
+
+
+#arquero{
+    display: inline-block;
+    position: relative;
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    margin-top: 100px;
+    margin-left: -20px;
+    width: 270px;
+    border-radius: 300px;
+}
+
+#arquero:hover  h3, #defensores:hover h3{
+    z-index: 2;
+    transition: 1s ease all;
+    box-shadow: 0 0 8px black;
+
+}
+
+h3{
+    position: relative;
+    z-index: 2;
+    font-size: 26px;
+    width: 100px;
+    margin: auto;
+    color: rgba(0, 0, 0);
+    border: 1px solid rgba(24, 23, 23);
+    background-color: rgb(61, 61, 61, 0.3);
+}
+
+
+
+
+.suplentes img, .titulares img{
+    display: inline-block;
+    position: relative;
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    border-radius: 200px;
+
+
+}
+.suplentes img{
+    margin-top: -3px;
+    
+}
+
+#torne{
+    margin-top: 3px;
+}
+
+.infoFacu {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%); /* Centra el texto sobre la imagen */
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.5s ease;
+    z-index: 2; /* Asegura que el párrafo esté por encima de la imagen */
+}
+
+
+.defensores, .medios {
+    width: 1000px;
+    height: 350px ;
+    padding-top: 50px;
+/*    border: 10px solid red;*/
+    margin: auto;
+    display: flex;
+    gap: 30px;
+
+    justify-content: space-between;
+}
+
+.delanteros {
+    width: 600px;
+    height: 350px ;
+    padding-top: 50px;
+    /*border: 10px solid red;*/
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+#mati, #nacho{
+    margin-top: 100px;
+}
+
+#facu:hover + .infoFacu, #mati:hover + .infoMati, #santif:hover + .infoSantif, #juani:hover + .infoJuani, 
+#nacho:hover + .infoNacho, #jordi:hover + .infoJordi
+, #nico:hover + .infoNico, #juan:hover + .infoJuan, 
+#juve:hover + .infoJuve, #valen:hover + .infoValen,
+#gerard:hover + .infoGerard {
+    transition: 1s ease;
+    box-shadow: 0 0 15px yellow;
+    background-color: rgba(255,255,255,0.7);
+    /*border: 2px dotted red;*/
+    opacity: 1;
+    width: 200px;
+    margin: 10px auto;
+}
+
+
+
+.infoMati{
+    width: 200px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    transform: translate(8px,168px); /* Centra el texto sobre la imagen */
+    font-size: 16px;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.5s ease;
+    z-index: 2; /* Asegura que el párrafo esté por encima de la imagen */
+    color: rgba(0,0,0);
+    padding: 5px;
+}
+
+#juani{
+    margin-bottom: 150px;
+}
+.infoJuani, .infoJuan{
+    width: 200px;
+    position: absolute;
+    transform: translate(266px,70px); /* Centra el texto sobre la imagen */
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.5s ease;
+    z-index: 2; /* Asegura que el párrafo esté por encima de la imagen */
+    color: black;
+    padding: 5px;
+}
+
+
+.infoSantif, .infoJordi{
+    width: 200px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    transform: translate(524px,70px); /* Centra el texto sobre la imagen */
+
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.5s ease;
+    z-index: 2; /* Asegura que el párrafo esté por encima de la imagen */
+    color: black;
+    padding: 5px;
+}
+
+.infoNacho{
+    width: 200px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    transform: translate(780px,170px); /* Centra el texto sobre la imagen */
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.5s ease;
+    z-index: 2; /* Asegura que el párrafo esté por encima de la imagen */
+    color: black;
+    padding: 5px;
+}
+
+#arquero:hover img {
+    filter: blur(3px); /* Desenfoque de la imagen al hacer hover */
+    
+}
+
+.titulares img:hover{
+    filter: blur(3px);
+    box-shadow: 0 0 15px yellow;
+    transition: 1s ease;
+
+}
+
+#arquero:hover .infoFacu {
+    opacity: 1; /* Muestra el párrafo al hacer hover */
+}
+
+thead th{
+    border-bottom: 1px solid black;
+}
+
+#torne:hover, #duglas:hover, #alan:hover, #bauti:hover{
+    box-shadow: 0 0 20px yellow;
+    transition: 1s ease;
+
+}
+
+.infoTorne,  .infoDuglas, .infoAlan,.infoBauti{
+    visibility: hidden;
+    width: 150px;
+    border-radius: 10px;
+    padding: 5px;
+}
+#torne:hover + .infoTorne, #duglas:hover + .infoDuglas, #alan:hover + .infoAlan
+, #bauti:hover + .infoBauti{
+    transition: 1s ease;
+    box-shadow: 0 0 15px yellow;
+    background-color: rgba(255,255,255, 0.8);
+    /*border: 2px dotted red;*/
+    visibility: visible;
+    width: 200px;
+    margin: 5px auto 90px auto;
+}
+
+
+#nico, #juve{
+    margin-top: 80px;
+}
+
+.infoJuve{
+    width: 200px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    transform: translate(8px,152px); /* Centra el texto sobre la imagen */
+    font-size: 16px;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.5s ease;
+    z-index: 2; /* Asegura que el párrafo esté por encima de la imagen */
+    color: black;
+    padding: 5px;
+}
+
+
+.infoNico{
+    width: 200px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    transform: translate(781px,150px); /* Centra el texto sobre la imagen */
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.5s ease;
+    z-index: 2; /* Asegura que el párrafo esté por encima de la imagen */
+    color: black;
+    padding: 5px;
+}
+
+
+.infoGerard{
+    width: 200px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    transform: translate(14px,68px); /* Centra el texto sobre la imagen */
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.5s ease;
+    z-index: 2; /* Asegura que el párrafo esté por encima de la imagen */
+    color: black;
+    padding: 5px;
+}
+
+.infoValen{
+    width: 200px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    transform: translate(375px,68px); /* Centra el texto sobre la imagen */
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.5s ease;
+    z-index: 2; /* Asegura que el párrafo esté por encima de la imagen */
+    color: black;
+    padding: 5px;
+}
+
